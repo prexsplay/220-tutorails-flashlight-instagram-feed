@@ -4,7 +4,7 @@ getInstaPictures();
 
 async function getInstaPictures() {
     // adding ?__a=1 on the end of any instagram URL is a public API
-    const response = await fetch("https://www.instagram.com/catmcgeecode/?__a=1");
+    const response = await fetch("https://www.instagram.com/prexsplay/?__a=1");
     const jsonData = await response.json(); // converts into json so we can easily find the images
     // console.log(jsonData)
     const pictures = jsonData.graphql.user.edge_owner_to_timeline_media.edges; 
